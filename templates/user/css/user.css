@@ -1,0 +1,670 @@
+.userTitles{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.userTitles__svg{
+    width: 40px;
+}
+.userTitles svg{
+    width: 40px;
+    height: 40px;
+    float: left;
+    fill: #f64c56;
+}
+.userTitles__titles:not(:only-child){
+    float: left;
+    padding-left: 15px;
+    width: 80%;
+    width: calc(100% - 40px);
+}
+.userTitles__title{
+    font-size: 20px;
+    color: #333333;
+    font-weight: 800;
+}
+.userTitles__subtitle{
+    font-size: 15px;
+    color: #777777;
+    padding-top: 6px;
+    line-height: 1.3;
+}
+
+.userForm{
+    text-align: left;
+    color: #777777;
+    position: relative;
+}
+.userForm .userForm__actions a:not(.btn){
+    color: #EF3340;
+    font-weight: 800;
+    text-decoration: none;
+}
+.userForm__form{
+    margin-top: -20px;    
+}
+.userForm__title{
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    font-weight: 800;
+    text-align: center;
+}
+.userForm__fieldset:not(:first-of-type){
+    margin-top: 15px;
+}
+.userForm__fieldset--separator:not(:first-of-type) {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #d1d1d1;
+}
+.userForm__field{
+    display: block;
+}
+.userForm__field--hide{
+    opacity: .3;
+    pointer-events: none;
+}
+.userForm__field--fullwidth{
+    grid-column-start: start;
+    grid-column-end: end;
+}
+.userForm__field--company{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.userForm__field{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.userForm__field input::-webkit-input-placeholder,
+.userForm__field textarea::-webkit-input-placeholder{
+    opacity: 0;
+}
+.userForm .checkbox__text{
+    font-size: 15px;
+}
+.userForm__radios{
+    display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+    -webkit-box-align:center;-moz-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;
+    height: 100%;
+    padding-top: 24px;
+    -webkit-box-pack:----(justify);-moz-box-pack:----(justify);-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;
+}
+.userForm__radios--noPad{
+    padding: 0;
+}
+.userForm__radios--left{
+    -webkit-box-pack:start;-moz-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;
+    margin-left: 5px;
+}
+.userForm__radios--left > div{
+    margin-right: 15px;
+}
+.userForm__field_title{
+    margin-bottom: 8px;
+    display: block;
+}
+
+.userForm__field select,
+.userForm__field input{
+    /* border: 1px solid #f4f4f4; */
+    background-color: #f4f4f4;
+    /* color: #777777; */
+}
+
+.userForm__actions{
+    margin-top: 20px;
+    text-align: right;
+}
+.userForm__actions span{
+    text-align: left;
+}
+.userForm__actions button{
+    padding-top: 14px;
+    padding-bottom: 14px;    
+}
+.userForm .leadform__errors{
+    margin-top: 20px;
+}
+.userForm__responses{
+    display: none;
+}
+.userForm__responses--success{
+    color: green;
+    background: #eeffee;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 2px;
+    line-height: 1.2;
+    font-size: 15px;
+}
+.userForm .fn-lf-errors:empty+.userForm__responses{
+    display: block;
+}
+.userForm__responses p:before{
+    content: '!';
+    border: 1px solid #f53541;
+    border-radius: 50%;
+    height: 15px;
+    line-height: 15px;
+    width: 16px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    background: #f53541;
+    color: #ffffff;
+    z-index: 1;
+}
+.userFormLogin__create{
+    overflow: hidden;
+    text-align: center;
+}
+.userFormLogin__create div{
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    color: #ffffff;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+.userFormLogin__create div:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 1000px;
+    border-top: 1px solid #404040;
+}
+.userFormLogin__create div:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 1000px;
+    border-top: 1px solid #404040;
+}
+._modal:not(._modal--popup) .userForm__field_title{
+    color: #ffffff;
+}
+._modal--popup .userForm__title{
+    color: #000000;
+    padding-top: 0;
+}
+._modal--popup .userForm__form{
+    margin-top: -15px;
+}
+._modal--popup .userForm__field{
+    margin-top: 15px;
+}
+._modal--popup .userForm__field_title{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+._modal--popup .userForm__field select,
+._modal--popup .userForm__field input{
+    /* padding: 7px;
+    height: auto; */
+    background-position: right 20px top 50%;
+}
+
+/* LOGIN FORM */
+.userFormLogin{
+    min-width: 350px;
+}
+.userFormLogin__others{
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+.userFormLogin__others a{
+    text-decoration: underline;
+}
+
+#user-form-login-top .userForm__actions button{
+    width: 100%;
+}
+
+/* GUESTFORM (EC)*/
+.userFormGuest{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.userFormGuest.active{
+    max-height: 3000px;
+    overflow: hidden;
+    transition: 1s;
+}
+.userFormGuest__billing{
+    display: none;
+}
+.userFormGuest fieldset>.fields{
+    display: grid;
+    grid-template-columns: [start] 0.5fr [line2] 0.5fr [end];
+    grid-column-gap: 10px;    
+}
+.ie .userFormGuest fieldset>.fields{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.ie .userFormGuest fieldset>.fields .userForm__field{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(50% - 10px)
+}
+
+
+/* GUESTFORM PASS (EC)*/
+.userFormGuestRegisterPassword{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.userFormGuestRegisterPassword.active{
+    max-height: 500px;
+    overflow: hidden;
+    transition: 1s;
+}
+.userFormGuestRegisterPassword fieldset>.fields{
+    display: grid;
+    grid-template-columns: [start] 0.5fr [line2] 0.5fr [end];
+    grid-column-gap: 10px;  
+}
+.userFormGuestRegisterPassword .userForm__field_title{
+    text-align: left;
+}
+.userFormGuestRegisterPassword__text{
+    color: #000000;
+    font-weight: 600;
+}
+.userFormGuestRegisterPassword__btnNo{
+    font-size: 13px;
+}
+
+/* RECOVERY FORM */
+body[id*="user-password-forgotten"] main{
+    min-height: 150px;
+}
+.userFormRecovery .userForm__field_title{
+    text-align: left;
+}
+.userFormRecovery__container{
+    max-width: 300px;
+    margin: 0 auto;
+}
+.userFormRecovery .fn-lf-errors{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+/* CREATE FORM */
+.userFormCreate .userForm__form fieldset>.fields{
+    display: grid;
+    grid-template-columns: [start] 0.5fr [line2] 0.5fr [end];
+    grid-column-gap: 10px;    
+}
+.ie .userFormCreate .userForm__form fieldset>.fields{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.ie .userFormCreate .userForm__form fieldset>.fields .userForm__field{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(50% - 10px)
+}
+
+
+/* UPDATE FORM */
+.userFormUpdate .userForm__form fieldset>.fields{
+    display: grid;
+    grid-template-columns: [start] 0.2fr [line2] 0.4fr [line3] 0.4fr [end];
+    grid-column-gap: 10px;
+}
+.ie .userFormUpdate .userForm__form fieldset>.fields{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.ie .userFormUpdate .userForm__form fieldset>.fields .userForm__field{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(33.33% - 10px)    
+}
+.userFormAddress .userForm__form fieldset>.fields,
+.userFormPwd .userForm__form fieldset>.fields{
+    display: grid;
+    grid-template-columns: [start] 0.5fr [line2] 0.5fr [end];
+    grid-column-gap: 10px;
+}
+.ie .userFormAddress .userForm__form fieldset>.fields,
+.ie .userFormPwd .userForm__form fieldset>.fields{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.ie .userFormAddress .userForm__form fieldset>.fields,
+.ie .userFormPwd .userForm__form fieldset>.fields .userForm__field{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(50% - 10px)   
+}
+.userFormPwd .userForm__field--newpwd{
+    grid-column-start: start;
+    grid-column-end: line2;
+}
+
+/* UPDATE - BILLING */
+.fn-ec-billing:not(.fn-ec-billing--company) .userForm__field--company{
+    display:none;
+}
+
+/* PROFILE */
+.fullImageBg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+.fullImageBg--overlay:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+.fullImageBg__container{
+    position: relative;
+    display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+    -webkit-box-pack:center;-moz-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+    -webkit-box-align:center;-moz-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;
+    -webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:vertical;-moz-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;
+}
+.fullImageBg__title{
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0,0,0,.55);
+    text-transform: capitalize;
+}
+.fullImageBg__text{
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 0 0 15px rgba(0,0,0,.55);
+}
+
+.fullImageBg--noImage{
+    background: none;
+    background-color: #f4f4f4;
+}
+.fullImageBg--noImage .fullImageBg__title{
+    font-size: 32px;
+    color: #333333;
+    text-shadow: none;
+    text-transform: none;
+    font-weight: 800;
+}
+.fullImageBg--noImage .fullImageBg__text{
+    font-size: 16px;
+    margin-top: 10px;
+    text-shadow: none;
+    color: #777777;
+}
+
+/* ICON BOXES */
+.iconBoxes__box{
+    display: block;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px #d8d8d8;
+    -webkit-box-shadow: 0px 2px 5px #d8d8d8;
+    -moz-box-shadow: 0px 2px 5px #d8d8d8;
+    -o-box-shadow: 0px 2px 5px #d8d8d8;
+    padding: 15px;
+    transition: .2s;
+}
+.iconBoxes__box:hover{
+    background: #f2f2f2;
+}
+.iconBoxes__icon img{
+    width: 90px;
+    height: auto;
+}
+.iconBoxes__content{
+    width: 67%;
+    width: calc(100% - 90px);
+}
+.iconBoxes__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.iconBoxes__text{
+    color: #777777;
+    font-weight: 300;
+}
+
+
+/* ADDRESSES */
+.addressBox{
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #f1f1f1;
+}
+.addressBox__title{
+    margin-bottom: 5px;
+}
+.addressBox__title:not(.addressBox__title--light){
+    font-weight: bold;
+}
+.addressBox__title .checkbox__checkmark{
+    vertical-align: sub;
+}
+.addressBox__title > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.addressBox__details{
+    /* font-size: 13px; */
+    line-height: 1.3;
+}
+.addressBox__details address{
+    font-style: normal;
+    color: #777777;
+}
+.addressBox__address{
+    line-height: normal;
+}
+.addressBox__actions{
+    
+}
+.addressBox__action{
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: 13px;
+}
+.addressBox__action--default{
+    color: #001fcc;
+}
+.addressBox__action--update{
+    color: #7dd09e;
+}
+.addressBox__action--delete{
+    color: firebrick;
+}
+.addressBox__action--checkoutEdit{
+
+}
+.fn-user-address-new{
+    display: inline-block;
+    font-weight: bold;
+    color: #EF3340;
+    font-size: 15px;
+}
+.fn-user-address-new:hover{
+    text-decoration: underline;
+}
+.fn-user-address-new:before{
+    content: '+ ';
+}
+
+/* USER TOOLBAR */
+.userToolbar{
+    display: inline-block;
+    position: relative;
+}
+.userToolbar ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 201;
+    right: 5px;
+    text-align: left;
+    background: #f53541;
+    margin-top: 18px;
+}
+.userToolbar:hover ul{
+    display: block;
+}
+.userToolbar ul:before{
+    content: '';
+    position:absolute;
+    bottom:100%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px 8px;
+    border-color: transparent transparent #f53541 transparent;
+}
+.userToolbar ul:after{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    height: 18px;
+    left: 0;
+    right: 0;
+}
+.userToolbar li a,
+.userToolbar li span{
+    padding: 15px 25px;
+    display: block;
+    border-bottom: 1px solid #ff606a;
+    white-space: nowrap;
+}
+.userToolbar li.active a,
+.userToolbar li:hover a,
+.userToolbar li.active span,
+.userToolbar li:hover span{
+    background: rgba(255,255,255,.2);
+}
+.userToolbar__text{
+    color: #ffffff;
+}
+/* .userToolbar:before{
+    content: '';
+    position: absolute;
+    left: -5px;
+    width: 1px;
+    background: #ffffff;
+    height: 15px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+} */
+/* .userToolbar--loggedin svg{
+    fill: #000000;
+} */
+/* .userToolbar--loggedin .userToolbar__text{
+    color: #000000;
+} */
+
+/* ORDERS LIST */
+.userOrders table {
+    background: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+.userOrders table tr th {
+    padding: 13px;
+    background: #EF3340;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.userOrders table tr td {
+    padding: 13px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+    font-weight: 300;
+}
+.userOrders table tr td:first-child {
+    font-weight: normal;
+}
+.userOrders table {
+    background: #ffffff;
+    margin: 25px 0;
+}
+
+.userFormLogin .btn--vft{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    line-height: 1.35;
+}
+.userFormLogin .btn--black{
+    display: none;
+}
+.checkout__box_content .userForm__form{
+    display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+    -webkit-box-pack:center;-moz-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+    -webkit-box-align:flex-end;-moz-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;
+    -webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+}
+.checkout__box_content .userForm__form fieldset{
+    width: 76%;
+    width: calc(100% - 170px);
+}
+.checkout__box_content .userForm__form .userForm__actions{
+    width: 170px;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+.checkout__box_content .userForm__form fieldset > div{
+    display: grid;
+    grid-template-columns: [start] 0.5fr [line2] 0.5fr [end];
+    grid-column-gap: 10px;
+}
+.ie .checkout__box_content .userForm__form fieldset > div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.ie .checkout__box_content .userForm__form fieldset > div .userForm__field{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(50% - 10px)    
+}
+.checkout__box_content.userForm .leadform__errors{
+    text-align: right;
+}
+.checkout .btn--vft{
+    display: none;
+}

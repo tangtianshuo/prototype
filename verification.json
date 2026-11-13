@@ -1,0 +1,21 @@
+{
+  "pages_checked": 78,
+  "missing_local_references": [],
+  "checks": [
+    "Homepage visual inspection at 1440x900",
+    "Category page image and layout inspection",
+    "Cookie reject click",
+    "Local keyword search",
+    "All local HTML src, stylesheet and anchor paths checked",
+    "390px viewport checked: original desktop template has 1040px content width",
+    "No failed completed image elements in homepage browser check",
+    "Cookie choice persists after reload"
+  ],
+  "limitations": [
+    "Backend operations are not reproduced",
+    "Vimeo videos need external service",
+    "Unmirrored deep links remain on source site",
+    "Original desktop layout and wording preserved",
+    "Original desktop template has horizontal overflow on narrow screens"
+  ]
+}

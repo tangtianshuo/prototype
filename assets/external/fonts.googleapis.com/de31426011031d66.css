@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/assets/external/fonts.gstatic.com/3707a0de5fa11c6c.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/assets/external/fonts.gstatic.com/4ed752f37ef0b575.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/assets/external/fonts.gstatic.com/3799faad54651e89.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url("/assets/external/fonts.gstatic.com/3f8a4694fd08db8e.ttf") format('truetype');
+}

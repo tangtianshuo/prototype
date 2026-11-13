@@ -1,0 +1,173 @@
+.jobsEmpty{
+    padding:15px 20px;
+    text-align: center;
+}
+
+.jobBlock {
+    display: block;
+    text-align:center;
+    position: relative;
+}
+.jobBlock__logo{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.jobBlock__logo img{
+    /* max-width: 112px; */
+    height: 50px;
+}
+.jobBlock__title{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+.jobBlock__content{
+    font-size: 16px;
+}
+.jobBlock__btn {
+    margin-top: 25px;
+}
+
+.leadform--jobs{
+    padding: 40px 20px 20px;
+}
+.leadform--jobs .leadform__fieldset{
+    display: block;
+}
+
+.leadform__jobTitle {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.leadform__jobFormContainer{
+    max-height: 65vh;
+    overflow: auto;
+}
+
+
+/*----- jobs--list -----*/
+.jobs--list .jobBlock{
+	text-align: left;
+	cursor: pointer;
+	background-color: #f4f4f4;
+}
+.jobs--list .jobBlock__title{
+	position: relative;
+	padding: 20px;
+	margin: 20px 0 0;
+	background-image: url("/templates/images/cccccc.png");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-color: transparent;
+    transition: 0.2s all;
+	font-weight: bold;
+    cursor: pointer;
+}
+.jobs--list .jobBlock:not(.active) .jobBlock__title:hover{
+	background-color: #e0e0e0;
+}
+.jobs--list .jobBlock:first-child .jobBlock__title{
+	margin-top: 0;
+}
+.jobs--list .jobBlock__title.fn-toggleBlock--active{
+	background-image: none;
+}
+.jobs--list .jobBlock__dropdown{
+	display: none;
+	padding: 0 20px 20px 20px;
+}
+.jobs--list .jobBlock__dropdown.active{
+	display: block;
+}
+.jobs--list .jobBlock__content h3{
+	margin-bottom: 15px;
+}
+.jobs--list .jobBlock__content p{
+	margin-bottom: 20px;
+}
+
+/*----- jobs--links -----*/
+.jobs--links .jobBlock__title{
+	background-image: none;
+}
+.jobs--links .jobBlock .jobBlock__title:hover{
+	background-color: #e0e0e0;
+}
+
+
+/*----- popupCustomOuter--leadform -----*/
+.popupCustomOuter--leadform .popupCustom{
+    padding: 0;
+}
+.popupCustomOuter--leadform .popupCustom:before,
+.popupCustomOuter--leadform .popupCustom:after,
+.popupCustomOuter--leadform .leadform:before{
+    display: none;
+}
+.popupCustomOuter--leadform .popupCustom__container {
+    width: 400px;
+    padding-right: 0;
+}
+.popupCustomOuter--leadform .popupCustom__close svg{
+    fill: #333333;
+}
+.inputfile{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    position: fixed;
+}
+.inputfile + label{
+    display: block;
+    padding: 20px 15px;
+    text-align: center;
+    border: none;
+}
+
+/* {
+    position: absolute;
+    left: -999999px;
+    opacity: 0;
+    -webkit-appearance: checkbox;
+} */
+
+/*----- content-job page -----*/
+.jobsLeadformOnPage .leadform--jobs{
+    padding: 0;
+}
+.jobsLeadformOnPage .leadform__jobFormContainer {
+    max-height: none;
+    overflow: unset;
+}
+.jobsLeadformOnPage .leadform__jobTitle{
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.jobExpired{
+    color: #EF3340;
+    font-size: 18px;
+    background-color: #ffe3e3;
+    padding: 40px 15px !important;
+    margin-bottom: 15px;
+}
+
+
+/*----- Mobile -----*/
+.isMobile .popupCustomOuter--leadform .popupCustom__container {
+    width: auto;
+}
+.isMobile .leadform--jobs {
+    overflow: auto;
+    height: 100vh;
+}
+.isMobile .leadform__jobFormContainer{
+    max-height: none;
+    overflow: unset;
+}
