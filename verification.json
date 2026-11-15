@@ -1,0 +1,23 @@
+{
+  "pages": 46,
+  "products": 24,
+  "html_http_200": 46,
+  "static_asset_audit_missing": 0,
+  "checks": [
+    "Desktop homepage, catalogue, product and solutions visual inspection",
+    "375px Chinese homepage, solutions, catalogue, product and contact: no horizontal overflow",
+    "768px solutions and 1024px catalogue: no horizontal overflow",
+    "Keyboard arrow and End navigation in tabs",
+    "Mobile filter native dialog: live count, Escape, focus restoration",
+    "Add quantity 2 to enquiry; verify quantity and remove",
+    "Local enquiry form required fields and email validation; save preview",
+    "All local static references and local fonts exist"
+  ],
+  "limitations": [
+    "SENTRA brand and product specifications are demonstration content",
+    "Supplier photographs and SVG illustrations are design references",
+    "Enquiry is saved locally; no email, CRM or payment backend",
+    "No video dependencies"
+  ],
+  "checked_at": "2026-11-15T04:34:38.384233+00:00"
+}

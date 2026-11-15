@@ -1,0 +1,10 @@
+{
+  "root": "/Volumes/拓展/Projects/OutSource/safety-prototype",
+  "html_files": 46,
+  "css_files": 2,
+  "unique_local_targets": 12,
+  "missing": [],
+  "outside_root": [],
+  "ok": true,
+  "scope": "Static HTML/CSS only; runtime JS requests and visual fidelity need browser checks."
+}
