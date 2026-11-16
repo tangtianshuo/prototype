@@ -19,5 +19,13 @@
     "Enquiry is saved locally; no email, CRM or payment backend",
     "No video dependencies"
   ],
-  "checked_at": "2026-11-15T04:34:38.384233+00:00"
+  "checked_at": "2026-11-15T04:34:38.384233+00:00",
+  "hero_update_checks": [
+    "Full-width background and floating copy checked on desktop",
+    "375px Chinese and English layout: controls inside hero, no horizontal overflow",
+    "3 theme controls and corresponding product URLs checked",
+    "Default autoplay observed advancing slides without interaction",
+    "No play button exists; manual theme switch remains functional",
+    "Hero images loaded; no console errors; node syntax check passed"
+  ]
 }
