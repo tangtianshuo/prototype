@@ -1,0 +1,12 @@
+{
+  "name": "strata-x1-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": {
+    "@fontsource-variable/space-grotesk": "5.2.10",
+    "@fontsource/ibm-plex-mono": "5.2.7",
+    "three": "0.180.0"
+  },
+  "devDependencies": { "esbuild": "0.25.12" }
+}

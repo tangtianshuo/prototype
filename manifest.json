@@ -1,0 +1,12 @@
+{
+  "product": "STRATA X1",
+  "source": "原创无人机 HTML 原型",
+  "pages": [
+    {
+      "path": "index.html",
+      "sections": ["overview", "engineering", "specs"],
+      "resources": "Three.js、WebP 模型预览和两款字体均内嵌"
+    }
+  ],
+  "external_runtime_dependencies": []
+}

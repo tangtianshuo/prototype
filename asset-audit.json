@@ -1,0 +1,10 @@
+{
+  "root": ".",
+  "html_files": 1,
+  "css_files": 0,
+  "unique_local_targets": 0,
+  "missing": [],
+  "outside_root": [],
+  "ok": true,
+  "scope": "可部署的单文件入口 index.html。支持性源码模板和截图单独保存。"
+}

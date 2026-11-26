@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN" data-graphics="pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--__LICENSES__-->
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="STRATA X1 航拍无人机概念展示，支持实时三维环视和爆炸视图。">
+  <title>STRATA X1 | 航拍无人机</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23090d13'/%3E%3Cpath fill='%236af5df' d='M3 22 13 8h6L9 22H3Zm10 0L23 8h6L17 25h-6l2-3Z'/%3E%3C/svg%3E">
+  <style>/*__STYLE__*/</style>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-mark" viewBox="0 0 34 28"><path fill="currentColor" stroke="none" d="M0 20.8 12.5 3h8.2L8.2 20.8H0Zm13.4 0L26 3h8l-15 22h-8.4l2.8-4.2Z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2 6m-2-6V5m0 6h6"/></symbol>
+    <symbol id="i-orbit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="5" transform="rotate(-35 12 12)"/><path d="M5 6.5c-1.8 2.8.9 7.4 5.1 10.3 3.8 2.7 7.8 3.1 9.2 1.1"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm0 9 8-4.5m-8 4.5L4 7.5m8 4.5v9"/></symbol>
+    <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 7v4"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><path d="M7 3H3v4m14-4h4v4M3 17v4h4m14-4v4h-4"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-lens" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 3v3m6-3v3m-6 12v3m6-3v3M3 9h3m-3 6h3m12-6h3m-3 6h3"/><rect x="10" y="10" width="4" height="4" rx=".6"/></symbol>
+    <symbol id="i-prop" viewBox="0 0 24 24"><path d="M12 10C8 8 6 5 8 3c2-2 5 2 5 7m1 2c3-3 7-2 7 1s-4 3-7 1m-3 0c.5 4-2 7-4.5 6s-.5-5 3.5-7"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><rect x="6" y="5" width="12" height="16" rx="2"/><path d="M10 5V3h4v2m-1 4-3 4h4l-3 4"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="#overview" aria-label="STRATA X1，回到概览">
+        <svg aria-hidden="true"><use href="#i-mark"/></svg>
+        <span>STRATA<span class="brand-period">.</span></span>
+      </a>
+      <nav aria-label="产品导航">
+        <a href="#overview" aria-current="location">产品概览</a>
+        <a href="#engineering">机身结构</a>
+        <a href="#specs">技术规格</a>
+      </nav>
+      <button class="button header-download" type="button" data-download>
+        <svg aria-hidden="true"><use href="#i-download"/></svg><span>下载规格</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="overview" aria-labelledby="title">
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> AERIAL IMAGING SYSTEM</p>
+          <h1 id="title">STRATA <strong>X1</strong></h1>
+          <p class="hero-subtitle">三轴云台航拍无人机</p>
+          <p class="hero-description">从空中取景，到近距离观察每一处构造。旋转机身，查看影像、动力与飞控模块。</p>
+          <div class="hero-actions requires-3d">
+            <button class="button button-primary" type="button" data-toggle-explode aria-pressed="false">
+              <svg aria-hidden="true"><use href="#i-layers"/></svg><span>展开机身</span>
+            </button>
+            <button class="button button-quiet" type="button" id="replay">
+              <svg aria-hidden="true"><use href="#i-play"/></svg><span>重播入场</span>
+            </button>
+          </div>
+          <div class="hero-actions fallback-only"><a href="#engineering" class="button button-primary">查看机身结构</a></div>
+        </div>
+
+        <div class="viewer-wrap">
+          <div class="viewer-frame">
+            <span class="frame-corner top-left" aria-hidden="true"></span><span class="frame-corner top-right" aria-hidden="true"></span>
+            <span class="frame-corner bottom-left" aria-hidden="true"></span><span class="frame-corner bottom-right" aria-hidden="true"></span>
+            <div class="viewer-header">
+              <span class="viewer-title"><svg aria-hidden="true"><use href="#i-cube"/></svg><span>3D 机身查看器</span></span>
+              <div class="mode-switch requires-3d" role="group" aria-label="机身视图">
+                <button type="button" data-mode="assembled" aria-pressed="true">整机</button>
+                <button type="button" data-mode="exploded" aria-pressed="false">爆炸视图</button>
+              </div>
+              <span class="fallback-only fallback-mode">静态视图</span>
+            </div>
+            <div class="viewport" id="viewport" role="region" aria-label="无人机模型" aria-describedby="viewer-help">
+              <div class="viewport-grid" aria-hidden="true"></div>
+              <div class="watermark" aria-hidden="true">X1</div>
+              <img class="static-preview" src="__ASSEMBLED__" alt="STRATA X1 四旋翼航拍无人机">
+              <canvas id="drone-canvas" aria-hidden="true"></canvas>
+              <svg id="leaders" aria-hidden="true">
+                <polyline data-leader="propulsion"/><polyline data-leader="airframe"/><polyline data-leader="imaging"/>
+                <circle data-point="propulsion" r="3.2"/><circle data-point="airframe" r="3.2"/><circle data-point="imaging" r="3.2"/>
+              </svg>
+              <div class="markers requires-3d">
+                <button class="marker marker-prop" data-marker="propulsion" type="button"><span class="marker-index">01</span><span>四旋翼动力</span></button>
+                <button class="marker marker-frame" data-marker="airframe" type="button"><span class="marker-index">02</span><span>模块化机身</span></button>
+                <button class="marker marker-optics" data-marker="imaging" type="button"><span class="marker-index">03</span><span>三轴影像云台</span></button>
+              </div>
+              <div class="part-readout requires-3d" id="part-readout" hidden>
+                <span class="mono" id="part-code"></span><strong id="part-title"></strong><span id="part-description"></span>
+              </div>
+            </div>
+            <div class="viewer-footer">
+              <p id="viewer-help" class="requires-3d"><svg aria-hidden="true"><use href="#i-mouse"/></svg><span class="desktop-hint"><span class="hint-action">拖动旋转</span><span aria-hidden="true"> / </span><span class="hint-action">滚轮缩放</span><span aria-hidden="true"> / </span><span class="assembled-hint hint-action">点击机身展开</span><span class="exploded-hint hint-action">点击查看部件</span></span><span class="touch-hint"><span class="hint-action">拖动旋转</span><span aria-hidden="true"> / </span><span class="hint-action">双指缩放</span><span aria-hidden="true"> / </span><span class="assembled-hint hint-action">轻触展开</span><span class="exploded-hint hint-action">点按部件</span></span><span class="sr-only">聚焦查看器后可用方向键旋转，加减键缩放，回车展开，Home 重置视角。</span></p>
+              <p class="fallback-only">静态预览 · 技术规格仍可查看</p>
+              <div class="viewer-tools requires-3d" role="group" aria-label="视角控制">
+                <button class="icon-button" id="zoom-out" type="button" title="缩小" aria-label="缩小"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+                <button class="icon-button" id="zoom-in" type="button" title="放大" aria-label="放大"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+                <button class="icon-button" id="reset-view" type="button" title="重置视角" aria-label="重置视角"><svg aria-hidden="true"><use href="#i-reset"/></svg></button>
+              </div>
+            </div>
+            <div class="sr-only" id="viewer-status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="metrics-band">
+      <div class="metrics shell">
+        <div class="metrics-heading"><span class="eyebrow"><span></span> FLIGHT PROFILE</span><span>概念规格</span></div>
+        <dl><div><dt>最高影像规格</dt><dd>4K<small> / 60 fps</small></dd></div><div><dt>目标续航</dt><dd>36<small> min</small></dd></div><div><dt>机械增稳</dt><dd>3<small> 轴</small></dd></div><div><dt>独立旋翼</dt><dd>4<small> 组</small></dd></div></dl>
+      </div>
+    </div>
+
+    <section class="engineering shell" id="engineering" aria-labelledby="engineering-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> AIRFRAME ARCHITECTURE</p>
+        <h2 id="engineering-title">机身结构</h2>
+        <p>从旋翼到云台，查看四组模块在机身中的位置。</p>
+      </div>
+      <div class="engineering-layout">
+        <figure class="engineering-image">
+          <div class="engineering-grid" aria-hidden="true"></div>
+          <img src="__EXPLODED__" alt="STRATA X1 爆炸视图，外壳、动力、飞控及三轴云台沿各自装配方向分离">
+          <figcaption><svg aria-hidden="true"><use href="#i-layers"/></svg> 爆炸视图</figcaption>
+        </figure>
+        <div class="component-list">
+          <article><svg aria-hidden="true"><use href="#i-prop"/></svg><div><h3>旋翼与动力</h3><p>可拆卸双叶桨与四组独立电机。</p></div><button type="button" class="button component-button requires-3d" data-component="propulsion" aria-label="在三维视图中定位旋翼与动力">定位</button></article>
+          <article><svg aria-hidden="true"><use href="#i-battery"/></svg><div><h3>外壳与电池</h3><p>机身上盖与快拆电池沿垂直方向分离。</p></div><button type="button" class="button component-button requires-3d" data-component="airframe" aria-label="在三维视图中定位外壳与电池">定位</button></article>
+          <article><svg aria-hidden="true"><use href="#i-chip"/></svg><div><h3>飞控与主板</h3><p>飞控模块装在中央舱内。</p></div><button type="button" class="button component-button requires-3d" data-component="flight" aria-label="在三维视图中定位飞控与主板">定位</button></article>
+          <article><svg aria-hidden="true"><use href="#i-lens"/></svg><div><h3>三轴影像云台</h3><p>云台支架与独立相机位于机腹前方。</p></div><button type="button" class="button component-button requires-3d" data-component="imaging" aria-label="在三维视图中定位三轴影像云台">定位</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="spec-section" id="specs" aria-labelledby="spec-title">
+      <div class="spec-layout shell">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> TECHNICAL DATA</p>
+          <h2 id="spec-title">技术规格</h2>
+          <p>以下为 STRATA X1 的概念设计目标。</p>
+          <button class="button spec-download" type="button" data-download><svg aria-hidden="true"><use href="#i-download"/></svg>下载规格表</button>
+        </div>
+        <dl class="spec-table" id="spec-table">
+          <div><dt>产品型号</dt><dd>STRATA X1</dd></div>
+          <div><dt>机型</dt><dd>四旋翼航拍无人机</dd></div>
+          <div><dt>影像规格</dt><dd>4K / 60 fps</dd></div>
+          <div><dt>云台</dt><dd>三轴机械增稳</dd></div>
+          <div><dt>目标续航</dt><dd>36 min</dd></div>
+          <div><dt>机身构造</dt><dd>可拆卸旋翼、上盖、电池与影像模组</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner">
+    <a href="#overview" class="brand" aria-label="STRATA X1，回到概览"><svg aria-hidden="true"><use href="#i-mark"/></svg><span>STRATA<span class="brand-period">.</span></span></a>
+    <span>STRATA X1 · 概念机型</span><a href="#overview">返回顶部</a>
+  </div></footer>
+  <dialog id="cinematic" class="cinematic" aria-label="全屏无人机入场动画">
+    <div class="cinematic-sky" aria-hidden="true"></div>
+    <div class="cinematic-picture" aria-hidden="true"></div>
+    <canvas id="entry-fx" aria-hidden="true"></canvas>
+    <div class="cinematic-grade" aria-hidden="true"></div>
+    <button class="button cinematic-skip" id="skip-entry" type="button" autofocus>跳过入场</button>
+  </dialog>
+  <noscript><style>html[data-graphics] body::before,.requires-3d,[data-download],#drone-canvas{display:none!important}.fallback-only{display:flex!important}.static-preview{display:block!important}</style></noscript>
+  <script>/*__SCRIPT__*/</script>
+</body>
+</html>

@@ -1,18 +1,24 @@
-# 原型索引
+# STRATA X1 航拍无人机原型
 
-本仓库按分支保存各个原型，`main` 仅保留本索引。
+STRATA X1 是定制的概念机型。此分支包含一页独立原型，覆盖产品概览、机身结构和技术规格。
 
-| 原型 | 分支 | 内容与启动方式 |
-| --- | --- | --- |
-| Vallfirest 网站高保真复刻 | [prototype/vallfirest-html](https://github.com/tangtianshuo/prototype/tree/prototype/vallfirest-html) | 原生 HTML / CSS / JavaScript，含 78 个页面、原站图片、字体和文字。切换到该分支后执行 `python3 serve.py`，访问 `http://localhost:8090/`。 |
-| SENTRA 消防 / 安防 / 救援独立站 v2 | [prototype/sentra-safety-html](https://github.com/tangtianshuo/prototype/tree/prototype/sentra-safety-html) | 原生 HTML / CSS / JavaScript，46 页、24 件示例产品，中英文、响应式、全宽自动轮播与隐藏切换控件、搜索筛选及本地询价；执行 `python3 -m http.server 8086 --bind 127.0.0.1`，访问 `http://localhost:8086/`。Cloudflare Pages：[在线预览](https://prototype-sentra-safety-html.prototype-37z.pages.dev/)。 |
+## 本地预览
 
-查看某个原型：
+直接在浏览器打开根目录的 `index.html`，或在该分支根目录运行：
 
 ```sh
-git clone --single-branch --branch prototype/vallfirest-html https://github.com/tangtianshuo/prototype.git
-cd prototype
-python3 serve.py
+python3 -m http.server 8086 --bind 127.0.0.1
 ```
 
-每个原型的实现范围、验证结果和限制见对应分支的 README。
+访问 `http://127.0.0.1:8086/`。主页首次打开自动播放入场，点「重播入场」可再次观看。
+
+## 交互与浏览器支持
+
+- 全屏 Three.js 入场动画，支持跳过。系统采用减少动态效果设置时直接显示整机。
+- 拖拽环视、滚轮或双指缩放、键盘操作、整机与爆炸视图切换、部件定位与规格 CSV 下载。
+- 实时渲染需要 WebGL 2。无 WebGL 2 时页面显示静态模型和产品资料。
+- 影像与续航数值为概念设计目标。图像、字体和脚本内嵌在页面中，无视频外链或服务端依赖。
+
+## 编辑源码
+
+`source/` 内保留原型源码。修改后在该目录执行 `npm ci` 和 `npm run build`，重新生成仓库根目录的 `index.html`。Cloudflare Pages 直接发布已生成的静态入口。
